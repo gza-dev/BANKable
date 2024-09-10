@@ -13,14 +13,14 @@ const Home = () => {
         <header className="home-header">
           <HeaderBox
           type="greeting"
-          title="Welcome"
+          title="Welcome,"
           user={loggedIn?.firstName || 'Guest'}
           subtext="Access and manage your transactions efficiently."
           />
           <TotalBalanceBox
           accounts={[]}
           totalBanks={1}
-          totalCurrentBalance={1250.35}
+          totalCurrentBalance={1250502.35}
           />
         </header>
 
@@ -30,7 +30,7 @@ const Home = () => {
       <RightSidebar
       user={loggedIn}
       transactions={[]}
-      banks={[{}, {}]}
+      banks={[{ currentBalance: 123.50 }, { currentBalance: 500.32 }]}
       />
     </section>
   )
