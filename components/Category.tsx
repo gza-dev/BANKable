@@ -3,7 +3,7 @@ import Image from "next/image";
 import { topCategoryStyles } from "@/constants";
 import { cn } from "@/lib/utils";
 
-import { Progress } from "./ui/Progress";
+import { Progress } from "./ui/progress";
 
 const Category = ({ category }: CategoryProps) => {
   const {
@@ -28,7 +28,7 @@ const Category = ({ category }: CategoryProps) => {
         <Progress
           value={(category.count / category.totalCount) * 100}
           className={cn("h-2 w-full", progressBg)}
-          indicatorClassNam={cn("h-2 w-full", indicator)}
+          indicatorClassName={cn("h-2 w-full", indicator)}
         />
       </div>
     </div>

@@ -29,27 +29,26 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
             user={loggedIn?.firstName || 'Guest'} 
             subtext="Access and manage your account and transactions efficiently."
           />
-
           <TotalBalanceBox 
             accounts={accountsData}
             totalBanks={accounts?.totalBanks}
             totalCurrentBalance={accounts?.totalCurrentBalance}
           />
-        </header>
-
-        <RecentTransactions 
+          <RecentTransactions 
           accounts={accountsData}
           transactions={account?.transactions}
           appwriteItemId={appwriteItemId}
           page={currentPage}
-        />
+          />
+        </header> 
       </div>
-
+      <div>
       <RightSidebar 
         user={loggedIn}
         transactions={account?.transactions}
         banks={accountsData?.slice(0, 2)}
       />
+      </div>
     </section>
   )
 }
