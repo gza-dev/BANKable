@@ -22,8 +22,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Horizon Bank",
-  description: "Horizon is a modern bank for everyone",
+  title: "BANKable | A Web-Based Bank That Allows Every Human On Earth To Be Bankable",
+  description: "BANKable is a modern bank for everyone",
   icons: '/icons/logo.svg'
 };
 

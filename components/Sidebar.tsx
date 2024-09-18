@@ -21,7 +21,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
                 src="/icons/logo.svg"
                 width={34}
                 height={34}
-                alt="Horizon Logo"
+                alt="BANKable Logo"
                 className="size-[24px] max-xl:size-14" 
             />
             <h1 className="sidebar-logo">BANKable</h1>
